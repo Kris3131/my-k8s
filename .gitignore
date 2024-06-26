@@ -1,0 +1,24 @@
+# Node modules
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# MacOS specific files
+.DS_Store
+
+# Docker files
+auth-service/node_modules
+chat-service/node_modules
+
+# Kubernetes config files (optional, if you don't want to share them)
+k8s/*.yaml
+
+# Ignore IDE specific files
+.vscode
+.idea
