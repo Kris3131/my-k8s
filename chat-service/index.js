@@ -9,7 +9,6 @@ app.use(express.json());
 app.post('/send-message', async (req, res) => {
   const { token, message } = req.body;
 
-  // 验证token
   try {
     const response = await axios.post(
       `http://auth-service:${process.env.AUTH_PORT || 3000}/validate-token`,
